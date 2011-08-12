@@ -21,7 +21,7 @@ namespace :girlscout do
     scout = Girlscout.new(Rails.root.join(file))
     scout.parse_urls!
     start = 0
-    
+
     while start < scout.urls.size
       limit = chunk
       scout.crawl!(host, port, start, limit, wait)

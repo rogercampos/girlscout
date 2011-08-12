@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+$:.unshift(File.dirname(__FILE__) + '/../lib')
+require "girlscout"
+
+scout = Girlscout::Scout.new(ARGV.first)
+scout.parse_urls!
+
+scout.crawl!
+scout.print_responses
