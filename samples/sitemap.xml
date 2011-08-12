@@ -6,4 +6,12 @@
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
+
+   <url>
+      <loc>http://www.iana.org/domains/example/</loc>
+   </url>
+
+   <url>
+      <loc>http://www.iana.org/foo/bar</loc>
+   </url>
 </urlset>

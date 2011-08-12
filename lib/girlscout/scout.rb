@@ -46,7 +46,7 @@ module Girlscout
           response = Net::HTTP.get_response(uri).code
           sleep(wait) if wait
           uri = uri.to_s
-          print response == "404" ? "X" : "."
+          print response == "404" ? "F" : "."
         rescue Timeout::Error => e
           response = "timeout"
           print "T"
