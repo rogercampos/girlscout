@@ -8,4 +8,4 @@ scout = Girlscout::Scout.new(ARGV.first)
 scout.parse_urls!
 
 scout.crawl!
-scout.print_responses
+#scout.print_responses
